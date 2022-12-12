@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container h1 {
+    color: blueviolet;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+
+}
