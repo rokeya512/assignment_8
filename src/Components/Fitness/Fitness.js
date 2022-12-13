@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFitness } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRunning } from '@fortawesome/free-solid-svg-icons';
 import Service from '../Service/Service';
 import './Fitness.css';
 
@@ -14,8 +14,10 @@ const Fitness = () => {
 
     return (
         <div className='container'>
-            <FontAwesomeIcon icon={faFitness}></FontAwesomeIcon>
-            <h1>FITNESS CLUB</h1>
+            <div className='fontawesome-container'>
+                <FontAwesomeIcon icon={faRunning} className='fontawesome'></FontAwesomeIcon>
+                <h1>FITNESS-CLUB</h1>
+            </div>
             <div className='service-container'>
                 <div className='card-container'>
                     {

@@ -3,3 +3,30 @@
     border-radius: 8px;
     padding: 8px;
 }
+
+.service img {
+    height: 190px;
+    width: 280px;
+    border-radius: 6px;
+}
+
+.service-information {
+    margin-top: 10px;
+}
+
+.service-name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.service-information div {
+    font-weight: 500;
+}
+
+.btn-list {
+    width: 100%;
+    border: none;
+    border-radius: 8px 8px 8px 8px;
+    background-color: blueviolet;
+    color: white;
+}
