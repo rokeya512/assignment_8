@@ -1,26 +1,29 @@
 .service {
-    border: 2px solid gray;
+    box-shadow: 5px 5px 5px 5px lightgray;
     border-radius: 8px;
     padding: 8px;
 }
 
 .service img {
-    height: 190px;
-    width: 280px;
+    height: 36%;
+    width: 96%;
     border-radius: 6px;
 }
 
 .service-information {
     margin-top: 10px;
+    padding-left: 5px;
 }
 
 .service-name {
     font-size: 22px;
     font-weight: 500;
+    margin-bottom: 3px;
 }
 
 .service-information div {
     font-weight: 500;
+
 }
 
 .btn-list {
@@ -29,4 +32,5 @@
     border-radius: 8px 8px 8px 8px;
     background-color: blueviolet;
     color: white;
+    padding: 8px 0;
 }

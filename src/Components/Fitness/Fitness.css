@@ -5,22 +5,22 @@
 
 .service-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     margin-top: 30px;
-    width: 70%;
+    gap: 20px;
 }
 
-.card-container {
+.card-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    width: 25%;
+    gap: 30px;
 }
 
 .sidebar {
     border: 2px solid gray;
     border-radius: 8px;
     margin-left: 10px;
+
 }
 
 .fontawesome-container {

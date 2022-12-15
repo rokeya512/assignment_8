@@ -19,7 +19,7 @@ const Fitness = () => {
                 <h1>FITNESS-CLUB</h1>
             </div>
             <div className='service-container'>
-                <div className='card-container'>
+                <div className='card-item'>
                     {
                         services.map(service => <Service
                             key={service.id}

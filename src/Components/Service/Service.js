@@ -15,7 +15,7 @@ const Service = (props) => {
                 </div>
             </div>
             <button className='btn-list'>
-                <p className='btn-text'>Add To List</p>
+                Add To List
             </button>
         </div>
     );
