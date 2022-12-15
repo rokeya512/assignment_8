@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRunning } from '@fortawesome/free-solid-svg-icons';
 import Service from '../Service/Service';
 import './Fitness.css';
+import Sidebar from '../Sidebar/Sidebar';
+
 
 const Fitness = () => {
     const [services, setService] = useState([]);
@@ -28,7 +30,7 @@ const Fitness = () => {
                     }
                 </div>
                 <div className='sidebar'>
-
+                    <Sidebar></Sidebar>
                 </div>
             </div>
         </div>

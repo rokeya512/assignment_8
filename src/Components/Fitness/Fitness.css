@@ -5,7 +5,7 @@
 
 .service-container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin-top: 30px;
     gap: 20px;
 }
@@ -13,13 +13,13 @@
 .card-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 22px;
 }
 
 .sidebar {
     border: 2px solid gray;
     border-radius: 8px;
-    margin-left: 10px;
+    margin-left: 70px;
 
 }
 
