@@ -38,6 +38,15 @@ const Sidebar = () => {
             <div className='exercise'>
                 <h5>Exercise Details</h5>
             </div>
+            <div className='exercise-time'>
+                <h6>Exercise time</h6>
+                <p>200 seconds</p>
+            </div>
+            <div className='break-time'>
+                <h6>Break time</h6>
+                <p>15 seconds</p>
+            </div>
+            <button className='btn'>Activity Completed</button>
         </div>
     );
 };

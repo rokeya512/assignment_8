@@ -10,8 +10,8 @@ const Service = (props) => {
                 <p className='service-name'>{name}</p>
                 <p>{details}</p>
                 <div>
-                    <p>For Age : {age}</p>
-                    <p>Time required : {time}s</p>
+                    <p>For Age : <strong>{age}</strong></p>
+                    <p>Time required : <strong>{time}s</strong></p>
                 </div>
             </div>
             <button className='btn-list'>
