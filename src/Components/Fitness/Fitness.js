@@ -4,6 +4,7 @@ import { faRunning } from '@fortawesome/free-solid-svg-icons';
 import Service from '../Service/Service';
 import './Fitness.css';
 import Sidebar from '../Sidebar/Sidebar';
+import Botton from '../Bottom/Botton';
 
 
 const Fitness = () => {
@@ -40,6 +41,7 @@ const Fitness = () => {
                     <Sidebar exercisetime={exercisetime}></Sidebar>
                 </div>
             </div>
+            <Botton></Botton>
         </div>
     );
 };

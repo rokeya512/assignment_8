@@ -17,6 +17,7 @@ const Sidebar = ({ exercisetime }) => {
             theme: "colored"
         });
     }
+
     return (
         <div className='container'>
             <div className='profile-information'>
