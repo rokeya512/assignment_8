@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 import profileImg from '../../images/cartoon.png';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Sidebar = ({ exercisetime }) => {
-
     const [seconds, setSeconds] = useState(0);
 
     const handleSeconds = (time) => {
         setSeconds(time);
+    }
+
+    const toastNotify = () => {
+        toast.info("Congratulations!!  Done with your activity!", {
+            position: "top-center",
+            theme: "colored"
+        });
     }
     return (
         <div className='container'>
@@ -53,7 +61,8 @@ const Sidebar = ({ exercisetime }) => {
                 <h6>Break time</h6>
                 <p>{seconds} seconds</p>
             </div>
-            <button className='btn-completed'>Activity Completed</button>
+            <button className='btn-completed' onClick={toastNotify}>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };

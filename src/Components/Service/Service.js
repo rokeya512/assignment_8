@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './Service.css';
 
 const Service = ({ service, addToExercisetime }) => {
