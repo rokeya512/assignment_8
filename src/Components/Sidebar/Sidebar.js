@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
+import profileImg from '../../images/cartoon.png';
 
-const Sidebar = () => {
+const Sidebar = ({ exercisetime }) => {
+
+    const [seconds, setSeconds] = useState(0);
+
+    const handleSeconds = (time) => {
+        setSeconds(time);
+    }
     return (
         <div className='container'>
-            <div>
-                <img src="" alt="" />
+            <div className='profile-information'>
+                <img src={profileImg} alt="" className='profileImg' />
                 <div>
-                    <p>Moon Henry</p>
-                    <address>Tehran, Iran</address>
+                    <h6><strong>Moon Henry</strong></h6>
+                    <address className='address'>Dhaka, Bangladesh</address>
                 </div>
             </div>
             <div className='about'>
@@ -28,25 +35,25 @@ const Sidebar = () => {
             <div>
                 <h5>Add A Break</h5>
             </div>
-            <div className='seconds'>
-                <p>10s</p>
-                <p id='second'>20s</p>
-                <p>30s</p>
-                <p>40s</p>
-                <p>50s</p>
+            <div className='seconds' >
+                <button onClick={() => handleSeconds(10)}>10s</button>
+                <button id='second' onClick={() => handleSeconds(20)}>20s</button>
+                <button onClick={() => handleSeconds(30)}>30s</button>
+                <button onClick={() => handleSeconds(40)}>40s</button>
+                <button onClick={() => handleSeconds(50)}>50s</button>
             </div>
             <div className='exercise'>
                 <h5>Exercise Details</h5>
             </div>
             <div className='exercise-time'>
                 <h6>Exercise time</h6>
-                <p>200 seconds</p>
+                <p> {exercisetime} seconds</p>
             </div>
             <div className='break-time'>
                 <h6>Break time</h6>
-                <p>15 seconds</p>
+                <p>{seconds} seconds</p>
             </div>
-            <button className='btn'>Activity Completed</button>
+            <button className='btn-completed'>Activity Completed</button>
         </div>
     );
 };

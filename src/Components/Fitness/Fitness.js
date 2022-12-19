@@ -8,12 +8,18 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Fitness = () => {
     const [services, setService] = useState([]);
+    const [exercisetime, setExercisetime] = useState(0);
+
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
 
+    const addToExercisetime = (time) => {
+        let totalExerciseTime = parseInt(exercisetime) + parseInt(time);
+        setExercisetime(totalExerciseTime);
+    }
     return (
         <div className='container'>
             <div className='fontawesome-container'>
@@ -26,11 +32,12 @@ const Fitness = () => {
                         services.map(service => <Service
                             key={service.id}
                             service={service}
+                            addToExercisetime={addToExercisetime}
                         ></Service>)
                     }
                 </div>
                 <div className='sidebar'>
-                    <Sidebar></Sidebar>
+                    <Sidebar exercisetime={exercisetime}></Sidebar>
                 </div>
             </div>
         </div>

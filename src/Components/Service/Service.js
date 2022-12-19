@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Service.css';
 
-const Service = (props) => {
-    const { picture, name, details, age, time, } = props.service;
+const Service = ({ service, addToExercisetime }) => {
+    const { picture, name, details, age, time } = service;
+
     return (
         <div className='service'>
             <img src={picture} alt="" />
@@ -14,10 +15,10 @@ const Service = (props) => {
                     <p>Time required : <strong>{time}s</strong></p>
                 </div>
             </div>
-            <button className='btn-list'>
+            <button className='btn-list' onClick={() => addToExercisetime(time)}>
                 Add To List
             </button>
-        </div>
+        </div >
     );
 };
 

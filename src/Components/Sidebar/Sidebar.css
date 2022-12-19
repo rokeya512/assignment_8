@@ -2,6 +2,26 @@
     padding: 5px 14px;
 }
 
+.profile-information {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.profile-information div {
+    line-height: 8px;
+}
+
+.profileImg {
+    width: 40px;
+    height: 42px;
+    margin-right: 15px;
+}
+
+.address {
+    font-size: 13px;
+    color: gray;
+}
+
 .about {
     display: flex;
     border: 1px solid gainsboro;
@@ -10,7 +30,8 @@
     column-gap: 40px;
     padding-top: 10px;
     padding-bottom: 4px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+    background-color: rgb(240, 222, 240);
 }
 
 .about h5 small {
@@ -25,12 +46,11 @@
 .seconds {
     display: flex;
     column-gap: 16px;
-    font-weight: 500;
-    border: 2px solid gray;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 22px;
     justify-content: center;
-    padding-top: 14px;
+    padding: 14px;
+    background-color: rgb(240, 222, 240);
 }
 
 #second {
@@ -38,11 +58,13 @@
     color: white;
 }
 
-.seconds p {
+.seconds button {
     border: 1px solid black;
     border-radius: 60px;
     font-size: 80%;
+    font-weight: 500;
     padding: 6px;
+    background-color: white;
 }
 
 .exercise {
@@ -53,20 +75,20 @@
     display: flex;
     column-gap: 50px;
     border-radius: 8px;
-    border: 1px solid gray;
-    padding: 12px;
+    padding: 12px 0px 0px 12px;
     margin-bottom: 10px;
+    background-color: rgb(240, 222, 240);
 }
 
 .break-time {
     display: flex;
-    column-gap: 65px;
+    column-gap: 70px;
     border-radius: 8px;
-    border: 1px solid gray;
-    padding: 12px;
+    padding: 12px 0px 0px 12px;
+    background-color: rgb(240, 222, 240);
 }
 
-.container .btn {
+.container .btn-completed {
     background-color: blueviolet;
     color: white;
     margin-top: 50px;
