@@ -44,7 +44,7 @@ const Sidebar = ({ exercisetime }) => {
             <div>
                 <h5>Add A Break</h5>
             </div>
-            <div className='seconds' >
+            <div className='seconds'>
                 <button onClick={() => handleSeconds(10)}>10s</button>
                 <button id='second' onClick={() => handleSeconds(20)}>20s</button>
                 <button onClick={() => handleSeconds(30)}>30s</button>

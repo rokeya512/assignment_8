@@ -92,7 +92,8 @@
     background-color: blueviolet;
     color: white;
     margin-top: 50px;
-    padding: 12px 65px;
+    width: 100%;
+    padding: 10px 0px;
     border: none;
     border-radius: 8px;
 
