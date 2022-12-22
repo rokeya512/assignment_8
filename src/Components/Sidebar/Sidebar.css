@@ -1,5 +1,5 @@
 .container {
-    padding: 3px 20px;
+    padding: 3px 16px;
 }
 
 .profile-information {
@@ -75,7 +75,7 @@
     display: flex;
     column-gap: 50px;
     border-radius: 8px;
-    padding: 12px 0px 0px 12px;
+    padding: 12px 0px 0px 10px;
     margin-bottom: 10px;
     background-color: rgb(240, 222, 240);
 }
@@ -84,7 +84,7 @@
     display: flex;
     column-gap: 70px;
     border-radius: 8px;
-    padding: 12px 0px 0px 12px;
+    padding: 12px 0px 0px 10px;
     background-color: rgb(240, 222, 240);
 }
 
@@ -96,5 +96,4 @@
     padding: 10px 0px;
     border: none;
     border-radius: 8px;
-
 }
