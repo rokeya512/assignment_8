@@ -5,10 +5,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Sidebar = ({ exercisetime }) => {
-    const [seconds, setSeconds] = useState(0);
+    const [breaktime, setBreaktime] = useState(0);
 
-    const handleSeconds = (time) => {
-        setSeconds(time);
+    const handleBreakTime = (time) => {
+        setBreaktime(time);
+        localStorage.setItem('breaktime', time);
     }
 
     const toastNotify = () => {
@@ -45,11 +46,11 @@ const Sidebar = ({ exercisetime }) => {
                 <h5>Add A Break</h5>
             </div>
             <div className='seconds'>
-                <button onClick={() => handleSeconds(10)}>10s</button>
-                <button id='second' onClick={() => handleSeconds(20)}>20s</button>
-                <button onClick={() => handleSeconds(30)}>30s</button>
-                <button onClick={() => handleSeconds(40)}>40s</button>
-                <button onClick={() => handleSeconds(50)}>50s</button>
+                <button onClick={() => handleBreakTime(10)}>10s</button>
+                <button id='second' onClick={() => handleBreakTime(20)}>20s</button>
+                <button onClick={() => handleBreakTime(30)}>30s</button>
+                <button onClick={() => handleBreakTime(40)}>40s</button>
+                <button onClick={() => handleBreakTime(50)}>50s</button>
             </div>
             <div className='exercise'>
                 <h5>Exercise Details</h5>
@@ -60,7 +61,7 @@ const Sidebar = ({ exercisetime }) => {
             </div>
             <div className='break-time'>
                 <h6>Break time</h6>
-                <p>{seconds} seconds</p>
+                <p>{breaktime} seconds</p>
             </div>
             <button className='btn-completed' onClick={toastNotify}>Activity Completed</button>
             <ToastContainer />
